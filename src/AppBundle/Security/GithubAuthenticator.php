@@ -17,6 +17,7 @@ use Symfony\Component\Security\Core\User\UserProviderInterface;
 class GithubAuthenticator implements SimplePreAuthenticatorInterface, AuthenticationFailureHandlerInterface
 {
     private $client;
+    
     private $clientId;
     private $clientSecret;
     private $router;
